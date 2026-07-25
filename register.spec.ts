@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
-  await page.goto('https://fonixedu.southeastasia.cloudapp.azure.com/student-portal/');
+test('Auth - User Registration', async ({ page }) => {
+  await page.goto('./');
   await page.getByRole('button', { name: 'Register' }).click();
   await page.getByRole('textbox', { name: 'Full Name' }).click();
   await page.getByRole('textbox', { name: 'Full Name' }).fill('Lakshani Jananjalee');
